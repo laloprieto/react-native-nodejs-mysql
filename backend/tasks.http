@@ -1,0 +1,28 @@
+@api = http://localhost:3000/tasks
+
+GET {{api}}
+################################
+GET {{api}}/1
+################################
+GET {{api}}/count
+################################
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "Hacer una app",
+    "description": "Hay que hacer una app en ionic"
+}
+
+################################
+DELETE {{api}}/3
+
+###############################
+
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "title": "Nueva tarea 1",
+    "description": "Esta es la nueva tarea 1"
+}
